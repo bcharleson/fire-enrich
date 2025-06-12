@@ -1,0 +1,121 @@
+{
+  "timestamp": "2025-06-12T18:42:40.982Z",
+  "testResults": [
+    {
+      "name": "Small Dataset",
+      "rowCount": 1000,
+      "generationTime": 12,
+      "fileSizeMB": 0,
+      "analysis": {
+        "rowCount": 1000,
+        "columnCount": 6,
+        "uniqueValues": {
+          "email": 924,
+          "first_name": 15,
+          "last_name": 13,
+          "company": 15,
+          "title": 12,
+          "location": 10
+        },
+        "avgCellLength": 12,
+        "estimatedMemoryMB": 0
+      },
+      "threshold": {
+        "loadTime": 500,
+        "memoryMB": 50,
+        "processingSpeed": 2000
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "name": "Medium Dataset",
+      "rowCount": 10000,
+      "generationTime": 15,
+      "fileSizeMB": 1,
+      "analysis": {
+        "rowCount": 10000,
+        "columnCount": 6,
+        "uniqueValues": {
+          "email": 5304,
+          "first_name": 15,
+          "last_name": 13,
+          "company": 15,
+          "title": 12,
+          "location": 10
+        },
+        "avgCellLength": 13,
+        "estimatedMemoryMB": 1
+      },
+      "threshold": {
+        "loadTime": 1000,
+        "memoryMB": 100,
+        "processingSpeed": 1500
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "name": "Large Dataset",
+      "rowCount": 50000,
+      "generationTime": 61,
+      "fileSizeMB": 4,
+      "analysis": {
+        "rowCount": 50000,
+        "columnCount": 6,
+        "uniqueValues": {
+          "email": 7135,
+          "first_name": 15,
+          "last_name": 13,
+          "company": 15,
+          "title": 12,
+          "location": 10
+        },
+        "avgCellLength": 13,
+        "estimatedMemoryMB": 7
+      },
+      "threshold": {
+        "loadTime": 2000,
+        "memoryMB": 300,
+        "processingSpeed": 1000
+      },
+      "passed": true,
+      "issues": []
+    },
+    {
+      "name": "Extra Large Dataset",
+      "rowCount": 100000,
+      "generationTime": 88,
+      "fileSizeMB": 9,
+      "analysis": {
+        "rowCount": 100000,
+        "columnCount": 6,
+        "uniqueValues": {
+          "email": 7150,
+          "first_name": 15,
+          "last_name": 13,
+          "company": 15,
+          "title": 12,
+          "location": 10
+        },
+        "avgCellLength": 13,
+        "estimatedMemoryMB": 14
+      },
+      "threshold": {
+        "loadTime": 3000,
+        "memoryMB": 500,
+        "processingSpeed": 800
+      },
+      "passed": true,
+      "issues": []
+    }
+  ],
+  "summary": {
+    "totalTests": 4,
+    "passedTests": 4,
+    "failedTests": 0
+  },
+  "recommendations": [
+    "✅ Validated performance up to 100,000 rows"
+  ]
+}
